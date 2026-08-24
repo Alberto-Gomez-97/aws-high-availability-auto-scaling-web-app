@@ -159,7 +159,84 @@ A dynamic scaling policy was configured based on CPU utilization.
 
 CPU load was generated on an EC2 instance using the Linux `stress` utility.
 
-```bash
 sudo amazon-linux-extras install epel -y
 sudo yum install stress -y
 stress -C 4
+
+---
+
+##Sticky Sessions
+
+Sticky Sessions were also configured on the Target Group.
+
+This configuration allows a client session to remain associated with the same backend instance for the duration defined by the configured persistence mechanism.
+
+The behavior was validated by accessing the application through the Load Balancer and refreshing the page.
+
+---
+
+#Validation
+
+The following tests were performed:
+
+Application access through the ALB DNS endpoint.
+Target Group health validation.
+EC2 instance failure simulation.
+Validation of traffic handling after an instance failure.
+Auto Scaling replacement of a terminated instance.
+CPU load generation.
+CloudWatch metric monitoring.
+Dynamic scaling validation.
+Sticky Session behavior validation.
+
+---
+
+##Troubleshooting
+
+During the implementation, Security Groups were adjusted to control communication between the Application Load Balancer and the EC2 instances.
+
+The EC2 instances were configured to receive HTTP traffic from the ALB Security Group instead of allowing unrestricted HTTP access.
+
+This ensures that the Load Balancer acts as the controlled entry point for the application.
+
+---
+
+##Cleanup
+
+After completing the tests, the AWS resources used for the project were removed to prevent unnecessary AWS charges.
+
+The cleanup included:
+
+Auto Scaling Group
+Launch Template
+Application Load Balancer
+Target Group
+EC2 instances
+
+---
+
+##Key Learnings
+
+This project provided practical experience with:
+
+High availability concepts in AWS.
+Horizontal scaling.
+Application Load Balancing.
+Target Groups and health checks.
+EC2 instance management.
+Security Group design.
+Auto Scaling Groups.
+Dynamic scaling policies.
+Amazon CloudWatch monitoring.
+Failure simulation and automatic recovery.
+Sticky Sessions.
+Infrastructure troubleshooting.
+
+---
+
+##Project Status
+
+Completed
+
+The infrastructure was created and tested in AWS and the resources were subsequently removed after completing the practical exercises.
+---
