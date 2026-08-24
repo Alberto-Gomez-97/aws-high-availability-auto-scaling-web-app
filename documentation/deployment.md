@@ -41,7 +41,7 @@ The instances were subsequently used as targets behind the Application Load Bala
 
 ---
 
-##3. Target Group
+## 3. Target Group
 
 A Target Group was created to group the two EC2 instances.
 
@@ -51,7 +51,7 @@ The Target Group allowed the Application Load Balancer to determine which instan
 
 ---
 
-##4. Application Load Balancer
+## 4. Application Load Balancer
 
 An Application Load Balancer was configured as the public entry point to the application.
 
@@ -63,7 +63,7 @@ This provides a single endpoint for users instead of exposing the individual EC2
 
 ---
 
-##5. Availability Zone Configuration
+## 5. Availability Zone Configuration
 
 The Load Balancer was configured across the available Availability Zones selected during the deployment.
 
@@ -71,7 +71,7 @@ The purpose was to distribute the infrastructure across multiple Availability Zo
 
 ---
 
-##6. Security Group Configuration
+## 6. Security Group Configuration
 
 The Security Groups were configured to control communication between the Application Load Balancer and the EC2 instances.
 
@@ -81,7 +81,7 @@ This prevents direct HTTP access to the instances through their public IP addres
 
 ---
 
-##7. Failure Detection Test
+## 7. Failure Detection Test
 
 To validate the Load Balancer health-check mechanism, one of the EC2 instances was stopped.
 
@@ -95,7 +95,7 @@ This test simulated an instance failure and demonstrated the health-check behavi
 
 ---
 
-##8. Sticky Sessions
+## 8. Sticky Sessions
 
 Sticky Sessions were configured on the Target Group.
 
@@ -107,7 +107,7 @@ After enabling persistence, the client continued to be directed to the same back
 
 ---
 
-##9. Auto Scaling Launch Template
+## 9. Auto Scaling Launch Template
 
 A Launch Template was created for the Auto Scaling configuration.
 
@@ -117,7 +117,7 @@ The Amazon Machine Image (AMI), instance type and storage configuration were sel
 
 ---
 
-##10. Auto Scaling Group
+## 10. Auto Scaling Group
 
 An Auto Scaling Group was created using the Launch Template.
 
@@ -127,7 +127,7 @@ A minimum capacity of two instances was configured for the practical exercise.
 
 ---
 
-##11. Automatic Instance Replacement
+## 11. Automatic Instance Replacement
 
 An EC2 instance managed by the Auto Scaling Group was removed to simulate an infrastructure failure.
 
@@ -139,7 +139,7 @@ The new instance was then incorporated into the infrastructure managed by the Au
 
 ---
 
-##12. Dynamic Scaling
+## 12. Dynamic Scaling
 
 A dynamic scaling policy was configured for the Auto Scaling Group.
 
@@ -149,7 +149,7 @@ The objective was to increase the number of EC2 instances when the workload incr
 
 ---
 
-##13. Load Generation
+## 13. Load Generation
 
 CPU load was generated on an EC2 instance using the Linux stress utility.
 
@@ -162,7 +162,7 @@ The test was used to validate the behavior of the dynamic scaling configuration.
 
 ---
 
-##14. Final Infrastructure
+## 14. Final Infrastructure
 
 After completing the exercises, the resulting architecture consisted of:
                         
@@ -192,7 +192,7 @@ After completing the exercises, the resulting architecture consisted of:
                   
 ---
 
-##15. Resource Cleanup
+## 15. Resource Cleanup
 
 After completing the practical exercises, the AWS resources were removed to avoid unnecessary charges.
 
