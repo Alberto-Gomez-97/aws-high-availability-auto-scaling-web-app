@@ -203,8 +203,4 @@ Launch Template
 Application Load Balancer
 Target Group
 EC2 instances
----    
-    Abajo selecciona **Commit changes** y utiliza:
-    
-    ```text
-    docs: add deployment documentation
+---   
