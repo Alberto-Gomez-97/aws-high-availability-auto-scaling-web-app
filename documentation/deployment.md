@@ -165,6 +165,7 @@ The test was used to validate the behavior of the dynamic scaling configuration.
 ##14. Final Infrastructure
 
 After completing the exercises, the resulting architecture consisted of:
+                        
                          Internet
                             |
                             v
