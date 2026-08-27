@@ -57,8 +57,8 @@ The Target Group should detect the stopped instance and mark it as unhealthy.
 The Target Group detected the instance failure.
 
 ### Evidence
-
-![Target Group Health Check](../screenshots/02-target-health.png)
+![Target Group Health Check](../screenshots/target-group.png)
+![Target Group Health Check](../screenshots/target-group-unhealthy.png)
 
 ---
 
