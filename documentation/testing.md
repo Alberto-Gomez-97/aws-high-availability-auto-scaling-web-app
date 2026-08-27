@@ -28,9 +28,9 @@ The application should be accessible through the ALB DNS endpoint.
 The application was successfully accessed through the Application Load Balancer.
 
 ### Evidence
+![Application Load Balancer DNS](../screenshots/ALB-DNS-1.png)
+![Application Load Balancer DNS](../screenshots/ALB-DNS-2.png)
 
-![Application Load Balancer DNS](../ALB-DNS-1.png)
-![Application Load Balancer DNS](../ALB-DNS-2.png)
 
 
 ---
