@@ -29,7 +29,9 @@ The application was successfully accessed through the Application Load Balancer.
 
 ### Evidence
 
-![Application Load Balancer DNS](../screenshots/01-alb-dns.png)
+![Application Load Balancer DNS](../ALB-DNS-1.png)
+![Application Load Balancer DNS](../ALB-DNS-2.png)
+
 
 ---
 
