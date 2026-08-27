@@ -84,7 +84,7 @@ The test demonstrated the Load Balancer's ability to detect an unavailable targe
 
 ### Evidence
 
-![Load Balancer Failure Handling](../target-group-unhealthy.png)
+![Load Balancer Failure Handling](../screenshots/target-group-unhealthy.png)
 
 ---
 
@@ -110,9 +110,9 @@ The Auto Scaling Group should automatically launch a replacement instance when t
 A replacement EC2 instance was automatically launched by the Auto Scaling Group.
 
 ### Evidence
+![Auto Scaling Instance Replacement](../screenshots/instances-created-by-the-ASG.png)
 
-![Auto Scaling Instance Replacement](../instances-created-by-the-ASG.png)
-![Auto Scaling Instance Replacement](../instances-created-by-the-ASG-2.png)
+![Auto Scaling Instance Replacement](../screenshots/instances-created-by-the-ASG-2.png)
 
 
 ---
