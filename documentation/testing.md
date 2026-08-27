@@ -130,6 +130,9 @@ CPU load was generated on an EC2 instance using the `stress` utility.
 sudo amazon-linux-extras install epel -y
 sudo yum install stress -y
 stress -C 4
+![Stress CPU Load](../screenshots/EC2-conexion.png)
+
+![Stress Installation](../screenshots/EC2-stress.png)
 
 ---
 
@@ -142,10 +145,11 @@ Result
 The CPU utilization increased and the resulting activity was monitored through CloudWatch.
 ### Evidence
 
-![Stress CPU Load](../screenshots/EC2-conexion.png)
 
-![Stress Installation](../screenshots/EC2-stress.png)
 
+![CloudWatch Alarms](../screenshots/CloudWatch.png)
+
+![CloudWatch CPU Utilization](../screenshots/CloudWatch-EC2-CPU.png)
 
 ---
 ## 6. Sticky Sessions Test
@@ -158,7 +162,9 @@ Enable Sticky Sessions in the Target Group attributes.
 Access the application through the Load Balancer.
 Refresh the application page.
 Observe the backend instance receiving the request.
+### Evidence
 
+![Sticky Sessions Configuration](../screenshots/StickySession1.png)
 Expected Result
 
 The client should continue to be directed to the same backend instance while the sticky session is active.
@@ -166,6 +172,9 @@ The client should continue to be directed to the same backend instance while the
 Result
 
 The client remained associated with the same instance after refreshing the application.
+### Evidence
+
+![Sticky Session Validation](../screenshots/StickySession2.png)
 
 ---
 
