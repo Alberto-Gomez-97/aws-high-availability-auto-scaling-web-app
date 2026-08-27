@@ -50,7 +50,7 @@ The Auto Scaling Group manages the EC2 instances and is responsible for maintain
 
 ### Architecture Diagram
 
-![AWS High Availability Architecture](architecture/architecture-diagram.png)
+![AWS High Availability Architecture](architecture/Highly%20Available%20and%20Auto-Scalable%20Web%20Application_AWS.drawio.png)
 
 ---
 
