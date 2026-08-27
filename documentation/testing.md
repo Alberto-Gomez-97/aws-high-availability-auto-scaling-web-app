@@ -58,7 +58,6 @@ The Target Group detected the instance failure.
 
 ### Evidence
 ![Target Group Health Check](../screenshots/target-group.png)
-![Target Group Health Check](../screenshots/target-group-unhealthy.png)
 
 ---
 
@@ -85,7 +84,7 @@ The test demonstrated the Load Balancer's ability to detect an unavailable targe
 
 ### Evidence
 
-![Load Balancer Failure Handling](../screenshots/03-failover.png)
+![Load Balancer Failure Handling](../target-group-unhealthy.png)
 
 ---
 
@@ -112,7 +111,9 @@ A replacement EC2 instance was automatically launched by the Auto Scaling Group.
 
 ### Evidence
 
-![Auto Scaling Instance Replacement](../screenshots/04-asg-replacement.png)
+![Auto Scaling Instance Replacement](../instances-created-by-the-ASG.png)
+![Auto Scaling Instance Replacement](../instances-created-by-the-ASG-2.png)
+
 
 ---
 
