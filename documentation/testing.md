@@ -140,6 +140,12 @@ The increased CPU utilization should trigger the configured scaling behavior acc
 Result
 
 The CPU utilization increased and the resulting activity was monitored through CloudWatch.
+### Evidence
+
+![Stress CPU Load](../screenshots/EC2-conexion.png)
+
+![Stress Installation](../screenshots/EC2-stress.png)
+
 
 ---
 ## 6. Sticky Sessions Test
